@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="Spotify.css">
+    <link rel="shortcut icon" href="spotify logo1.webp" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand">
+                <img src="https://th.bing.com/th?q=Spotify+App+Logo&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" width="20px" height="20px">Spotify
+            </li>
+
+            <li><i class="fa-solid fa-house"></i> Home</li>
+            <li>
+                <a class="link_about" href="about.html">About</a>
+            </li>
+
+            <div class="border_icon">
+                <p>Indian</p>
+                <p class="Music">Music <i class="fa-solid fa-location-dot"></i></p>
+            </div>
+
+            <div class="nav_select">
+                <select class="select">
+                <option>All</option>
+                <option>Hindi</option>
+                <option>Panjabi</option>
+                <option>Hip-Hop</option>
+                <option>English</option>
+                <option>Tamil</option>
+                </select>
+
+                <div class="search">
+                    <input text="search" placeholder=" Search Song.." class="search" />
+                </div>
+
+                <div class="searchicon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+
+
+            <li style="margin-left:65px">
+                premium <i class="fa-solid fa-crown"></i>
+            </li>
+
+            <li>
+                Downloads <i class="fa-solid fa-circle-down"></i>
+            </li>
+
+            <div class="favorite">
+                Favourite <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="support">
+                <a href="support.html" style="color:white;">Support <i class="fa-solid fa-phone"></i></a>
+            </div>
+
+            <div class="sign">
+                <button onclick="document.location='spotifysign.html'">Sign Up</button>
+            </div>
+
+            <span class="login"> 
+               <button onclick="document.location='loginspotify.html'">Log In</button> 
+              </span>
+
+            <div class="list">
+                <i class="fa-solid fa-list"></i>
+            </div>
+        </ul>
+    </nav>
+    <h1 class="songname">90s Song</h1>
+    <span class="Ssong">
+
+        <div class="playlist">
+            <img src="/Image/pic1.jpg" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Har-Kasam-Se-Badi-Hai-Abhijeet-Bhattacharya-Kavita-Krishnamurthy</p>
+            <audio id="song" unmuted>
+                  <source src="Har-Kasam-Se-Badi-Hai-Abhijeet-Bhattacharya-Kavita-Krishnamurthy.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress"> 
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+
+        <div class="playlist2" >
+            <img src="/Image/pic2.jpg" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Tumhe-Jo-Maine-Dekha-Shreya-Ghoshal-Abhijeet</p>
+            <audio  src="Tumhe-Jo-Maine-Dekha-Shreya-Ghoshal-Abhijeet (2).mp3" type="audio/mpeg" id="song2" autoplay>
+            </audio>
+            <input type="range" value="0" id="progress2">
+            <div class="controls2">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause2()"><i class="fa-solid fa-play" id="ctrlIcon2"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+        
+        <div class="playlist3" >
+            <img src="/Image/pic3.jpg" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Main-Hoon-Na--Remix--Ranjit-Barot</p>
+            <audio  src="Main-Hoon-Na--Remix--Ranjit-Barot.mp3" type="audio/mpeg" id="song3" autoplay>
+            </audio>
+            <input type="range" value="0" id="progress3">
+            <div class="controls3">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause3()"><i class="fa-solid fa-play" id="ctrlIcon3"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+        <div class="playlist4" >
+            <img src="/Image/pic4.jpeg" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Chaand-Taare-Abhijeet(90s old song )</p>
+            <audio  src="Chaand-Taare-Abhijeet.mp3" type="audio/mpeg" id="song4" autoplay>
+            </audio>
+            <input type="range" value="0" id="progress4">
+            <div class="controls4">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause4()"><i class="fa-solid fa-play" id="ctrlIcon4"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+
+    </span>
+
+    <h1 class="songname">Hollywood Song</h1>
+    <span class="Hollywoodsong">
+        <div class="playlist5">
+            <img src="/Image/pic5.jpeg" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Fake A Smile Alan Walker 320 Kbps.mp3(Hollywood Song)</p>
+            <audio id="song5" autoplay>
+                  <source src="Fake A Smile Alan Walker 320 Kbps.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress5"> 
+            <div class="controls5">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause5()"><i class="fa-solid fa-play" id="ctrlIcon5"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+
+        <div class="playlist6">
+            <img src="/Image/pic6.jpg" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Breaking The Rules Jubin Nautiyal 320 Kbps.mp3(Hollywood Song)</p>
+            <audio id="song6" autoplay>
+                  <source src="Breaking The Rules Jubin Nautiyal 320 Kbps.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress6"> 
+            <div class="controls6">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause6()"><i class="fa-solid fa-play" id="ctrlIcon6"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+        <div class="playlist7">
+            <img src="/Image/pic7.png" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Your Power Billie Eilish 320 Kbps.mp3(Hollywood Song)</p>
+            <audio id="song7" autoplay>
+                  <source src="Your Power Billie Eilish 320 Kbps.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress7"> 
+            <div class="controls7">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause7()"><i class="fa-solid fa-play" id="ctrlIcon7"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+        <div class="playlist8">
+            <img src="/Image/pic8.png" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Baila Conmigo Selena Gomez 320 Kbps.mp3(Hollywood Song)</p>
+            <audio id="song8" autoplay>
+                  <source src="Baila Conmigo Selena Gomez 320 Kbps.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress8"> 
+            <div class="controls8">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause8()"><i class="fa-solid fa-play" id="ctrlIcon8"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+
+    </span>
+
+
+    <h1 class="songname">Hip-Hop Song</h1>
+    <span class="Hip-Hopsong">
+        <div class="playlist9">
+            <img src="/Image/pic9.avif" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Together-Forever-Yo-Yo-Honey-Singh(Hip-Hop Song)</p>
+            <audio id="song9" autoplay>
+                  <source src="Together-Forever-Yo-Yo-Honey-Singh.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress9"> 
+            <div class="controls9">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause9()"><i class="fa-solid fa-play" id="ctrlIcon9"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+
+        <div class="playlist10">
+            <img src="/Image/211044421_200x200.jpg" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>No-Brands-Emiway-Bantai.mp3(Hollywood Song)</p>
+            <audio id="song10" autoplay>
+                  <source src="No-Brands-Emiway-Bantai.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress10"> 
+            <div class="controls10">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause10()"><i class="fa-solid fa-play" id="ctrlIcon10"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+        <div class="playlist11">
+            <img src="/Image/pic11.jpeg" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Desi-Kalakaar-Yo-Yo-Honey-Singh.m4a(Hip-Hop Song)</p>
+            <audio id="song11" autoplay>
+                  <source src="Desi-Kalakaar-Yo-Yo-Honey-Singh.m4a" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress11"> 
+            <div class="controls11">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause11()"><i class="fa-solid fa-play" id="ctrlIcon11"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+        <div class="playlist12">
+            <img src="/Image/pic12.jpg" width="150px" height="150px" style="margin-top:10px" class="songimg">
+            <p>Dj-Waley-Babu-Badshah-Aastha-Gill.mp3(Hip-Hop Song)</p>
+            <audio id="song12" autoplay>
+                  <source src="Dj-Waley-Babu-Badshah-Aastha-Gill.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress12"> 
+            <div class="controls12">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause12()"><i class="fa-solid fa-play" id="ctrlIcon12"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </span>
+
+    <footer class="header">
+        <ol class="header-list">Company
+            <a href="about.html">
+                <li class="footerlist">About</li>
+            </a>
+
+            <a href="#">
+                <li class="footerlist">Jobs</li>
+            </a>
+
+            <a href="#">
+                <li class="footerlist">For the Record</li>
+            </a>
+
+        </ol>
+        <ol class="header-list">Communities
+            <a href="#">
+                <li class="footerlist">For Artist</li>
+            </a>
+
+            <a href="#">
+                <li class="footerlist">Developers</li>
+            </a>
+
+            <a href="#">
+                <li class="footerlist">Advertising</li>
+            </a>
+
+            <a href="#">
+                <li class="footerlist">Investors</li>
+            </a>
+            <a href="#">
+                <li class="footerlist">Vendors</li>
+            </a>
+
+        </ol>
+        <ol class="header-list">Useful links
+            <a href="#" onclick="document.location='support.html'">
+                <li class="footerlist">Support</li>
+            </a>
+
+            <a href="#">
+                <li class="footerlist">Free Mobile App</li>
+            </a>
+
+        </ol>
+        <div class="socialmedialink">
+            <a class="s-m-l-btn" href="https://www.instagram.com/spotify/"><img src="/Image/insta2.avif" width="50px" height="50px;"></a>
+            <a class="s-m-l-btn" href="https://twitter.com/spotify"><img src="/Image/twitter1.png" width="50px" height="50px;"></a>
+            <a class="s-m-l-btn" href="https://www.facebook.com/Spotify"><img src="/Image/facebook.png" width="50px" height="50px;"></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/1ac34882f2.js ">
+    </script>
+    <script src="Spotify.js "></script>
+
+</body>
+
+</html>

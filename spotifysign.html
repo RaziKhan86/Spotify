@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="spotifysign.css">
+    <link rel="shortcut icon" href="spotify logo1.webp" type="image/x-icon">
+</head>
+
+<body>
+    <div class="sign">
+        <img src="spotify logo1.webp" height="40px" width="40px">Spotify
+        <h3>Signup for free to start listening</h3>
+        <button class="Google">Signup with Google</button>
+        <p>----------Or----------</p>
+    </div>
+    <form class="main" action="Spotify.html">
+        <lable for="name" class="name">First Name:</lable>
+        <input type="name" class="firstname" id="name" placeholder="Enter First Name" required>
+        <br>
+        <lable for="name" class="name">Last Name:</lable>
+        <input type="name" class="lastname" id="name" placeholder="Enter Last Name" required>
+        <br>
+        <lable for="email" class="name">Email:</lable>
+        <input type="email" class="email" id="email" placeholder="Enter your Email" required>
+        <br>
+        <lable for="psw" class="name">Password:</lable>
+        <input type="password" class="psw" id="psw" placeholder="Enter password" pattern="[A-Za-z0-9]{4,8}" title="Enter password As it(Abc1234)(4 digit)" required>
+        <br>
+        <button class="btn " onclick="alert('Your Id is Created.')">Signup</button>
+        <div class="account">
+            Do You Have a Account?
+            <a href="#login" style="color:black;" onclick="document.location='loginspotify.html'" class="a">login</a>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="loginspotify.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="spotify logo1.webp" type="image/x-icon">
+</head>
+
+<body>
+    <div class="logo ">
+        <img src="/Image/spotify4.webp " width="40px " height="40px " class="img ">
+        <p class="logoname ">Spotify</p>
+        <div class="login ">
+            <h1 class="h1 ">Log in to Spotify</h1>
+            <div class="google ">
+                <img src="/Image/google.webp " width="30px " height="30px " style="margin-top:10px; margin:30px; ">Continue With Google
+            </div>
+            <div class="facebook ">
+                <img src="/Image/facebook.png " width="35px " height="30px " style="margin-top:10px; margin:30px; ">Continue With Facebook
+            </div>
+            <div class="apple ">
+                <img src="/Image/apple.webp " width="30px " height="30px " style="margin-top:5px; margin:20px; ">Continue With Apple
+            </div>
+            <div class="phoneno ">
+                Continue With Phone number
+            </div>
+            <br><br>
+            <hr style="margin-left:100px;height:1px; width:75%;border-width:0;color:rgb(85, 81, 81);background-color:rgb(85, 81, 81) ">
+            <div class="loginpage ">
+                <form action="Spotify.html">
+                    <div class="text ">
+                        <label for="email ">Email or username
+                    </label>
+                    </div>
+                    <div class="email ">
+                        <input type="email" class="email" placeholder="Email or username " required>
+                    </div>
+
+                    <div class="pwd ">
+                        <label for="pwd">Password
+                    </label>
+                    </div>
+                    <div class="psw ">
+                        <input type="password " class="psw " placeholder="password " required pattern="[a-z0-9]{4}" title="only fill latters(a-z) ">
+                    </div>
+                    <div class="checkbox ">
+                        <input type="checkbox" class="checkbox" required> Remember me
+                    </div>
+                    <span>
+                        <button >Log In</button>
+                    </span>
+                    <div class="forget " style="margin-top:20px; cursor:pointer; ">
+                        Foregt your password?
+                    </div>
+                    <hr style="margin-top:30px;margin-left:100px;height:1px; width:75%;border-width:0;color:rgb(85, 81, 81);background-color:rgb(85, 81, 81) ">
+                </form>
+                <div class="noaccount ">
+                    Don't have an account?
+                    <a href="#Sign" style="color:white;" onclick="document.location='spotifysign.html'">Sign up.</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

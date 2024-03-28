@@ -1,0 +1,116 @@
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            body {
+                background-image: url('/Image/black.jpeg');
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .sign {
+                color: white;
+                font-size: 30px;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            
+            .Google {
+                margin-top: 10px;
+                width: 300px;
+                height: 50px;
+                background-color: blanchedalmond;
+                font-size: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                border-radius: 60px;
+                transition: all 1s;
+                cursor: pointer;
+                border: none;
+            }
+            
+            .Google:hover {
+                background-color: cadetblue;
+            }
+            
+            .Google:active {
+                transform: translate(0px, -10px);
+            }
+            
+            p {
+                margin-top: 20px;
+            }
+            
+            .main {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 500px;
+                height: 400px;
+                background-color: aqua;
+                margin-left: 430px;
+                margin-top: 30px;
+                box-shadow: -10px -10px 30px rgb(165, 107, 107);
+                border-radius: 30px;
+            }
+            
+            .name {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            
+            .firstname {
+                width: 250px;
+                margin-top: 50px;
+                height: 35px;
+            }
+            
+            .lastname {
+                width: 250px;
+                margin-top: 20px;
+                height: 35px;
+            }
+            
+            .email {
+                width: 250px;
+                margin-top: 20px;
+                height: 35px;
+                margin-left: 45px;
+            }
+            
+            input {
+                margin-left: 10px;
+            }
+            
+            .psw {
+                width: 250px;
+                margin-top: 20px;
+                height: 35px;
+                margin-left: 18px;
+            }
+            
+            .btn {
+                margin-top: 30px;
+                width: 100px;
+                height: 40px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin-left: 30px;
+            }
+            
+            .btn:hover {
+                cursor: pointer;
+                background-color: black;
+                color: white;
+                border: 2px solid white;
+                border-radius: 5px;
+            }
+            
+            .account {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin-top: 30px;
+            }
+            
+            .a {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
